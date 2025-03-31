@@ -1,7 +1,9 @@
 {
-    "name": "Hayek SOL",
+    "name": "Hayek Staked SOL",
     "symbol": "HayekSOL",
+    "description": "MEV-Powered Liquid Staking Token",
     "uri": "https://raw.githubusercontent.com/team-supersafe/hayeksol-lst/main/HayekSOL.json",
     "seller_fee_basis_points": 0,
-    "creators": null
+    "creators": null,
+    "website": "https://hayek.fi"
 }

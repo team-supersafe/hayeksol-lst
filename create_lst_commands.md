@@ -16,28 +16,35 @@ This guide contains the commands needed to create the LST token mint following S
 
 ```bash
 metaboss create fungible \
-    --decimals 9 \
-    --metadata HayekSOL-metadata.json \
-    --mint-path Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP.json
+--decimals 9 \
+--metadata HayekSOL-metadata.json \
+--mint-path HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q.json \
+--rpc "https://rpc.ironforge.network/mainnet?apiKey=01HV49SGGM3VBZMR4CWW0NBW5D"
 ```
 
 This command will create your token mint and metadata accounts. After running this, you'll receive a mint address that you'll need for the next steps.
 
+#### Output
+```
+Signature: 4gfjrjK5bTXDccZyzMYrdKPncuKjQV8doeQVpFouRnWJLihENCASuvWPME1s7d43FBnXPvALGFrBa7bPwBA1KnbN
+Mint: HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q
+Metadata: H5HFaENgLs5UL2hjtzQ1yuJ2FcRX9QQonUJTzWSBwT1L
+```
+
 ### 2. Disable Freeze Authority
 
 ```bash
-spl-token authorize --disable Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP freeze
+spl-token authorize --disable HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q freeze \
+-um --config ~/.config/solana/cli/config.yml
 ```
 
-Replace `Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP` with the mint address received from the previous command.
-
-### Output
+#### Output
 ```
-Updating Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP
-  Current freeze: 4FbPnN2A6zerBETx7NeERqDJMZjR5WhUQgXbCEw6mbVD
+Updating HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q
+  Current freeze: GFefRR6EASXvnphnJApp2PRH1wF1B5pJijKBZGFzq1x1
   New freeze: disabled
 
-Signature: 5ZR8NnxSvdBoYoGkeQnvPM4SToxogHEH9UUyhX5st8QVUqAm5DS67ksQ4mtsXuSMgRzP8opjUDFcw3rdeDPYV9ZL
+Signature: 5j3ipK4xKMUWDnfA3E9u1fNTjB9PCs4j6h67ow8PvZiDsbaFxqbuYL7mxaGcd6vNXUs945cLd664GPCpAimebX5D
 ```
 
 ### 3. Transfer Mint Authority to Sanctum
