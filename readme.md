@@ -1,0 +1,1 @@
+The HayekSOL LST is being deployed with Sanctum
