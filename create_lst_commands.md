@@ -31,6 +31,12 @@ spl-token authorize --disable YOUR_MINT_ADDRESS freeze
 
 Replace `YOUR_MINT_ADDRESS` with the mint address received from the previous command.
 
+Updating Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP
+  Current freeze: 4FbPnN2A6zerBETx7NeERqDJMZjR5WhUQgXbCEw6mbVD
+  New freeze: disabled
+
+Signature: 5ZR8NnxSvdBoYoGkeQnvPM4SToxogHEH9UUyhX5st8QVUqAm5DS67ksQ4mtsXuSMgRzP8opjUDFcw3rdeDPYV9ZL
+
 ### 3. Transfer Mint Authority to Sanctum
 
 ```bash
