@@ -1,4 +1,4 @@
-# Creating the LST Token Mint
+# Creating the LST Token with Sanctum
 
 This guide contains the commands needed to create the LST token mint following Sanctum's documentation.
 
@@ -19,7 +19,7 @@ metaboss create fungible \
 --decimals 9 \
 --metadata HayekSOL-metadata.json \
 --mint-path HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q.json \
---rpc "https://rpc.ironforge.network/mainnet?apiKey=01HV49SGGM3VBZMR4CWW0NBW5D"
+--rpc "https://rpc.ironforge.network/mainnet?apiKey=<yourApiKey>"
 ```
 
 This command will create your token mint and metadata accounts. After running this, you'll receive a mint address that you'll need for the next steps.
@@ -54,12 +54,9 @@ Signature: 5j3ipK4xKMUWDnfA3E9u1fNTjB9PCs4j6h67ow8PvZiDsbaFxqbuYL7mxaGcd6vNXUs94
 ### 3. Transfer Mint Authority to Sanctum
 
 ```bash
-spl-token authorize Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP mint GRwm4EXMyVwtftQeTft7DZT3HBRxx439PrKq4oM6BwoZ \
--um --config ~/.config/solana/cli/config.yml \
---fee-payer ~/solana/me.json
+spl-token authorize HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q mint GRwm4EXMyVwtftQeTft7DZT3HBRxx439PrKq4oM6BwoZ \
+-um --config ~/.config/solana/cli/config.yml
 ```
-
-Replace `Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP` with the same mint address.
 
 Command output
 
