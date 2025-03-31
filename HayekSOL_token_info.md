@@ -1,11 +1,6 @@
 # HayekSOL Token Creation Information
 
 ## Transaction Details
-- **Signature**: `62ucuU9wY6vVeSia3Zg741f88Utp7rrssdYgHRsUaErtYNjv49PNH4uddqtbDtDfhFSZ8NHhUuEKRcy8NHtUc4Tp`
-- **Mint Address**: `Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP`
-- **Metadata Account**: `9nbZmNUnvWjVNHPAy54GRVpV6BcVek1Np7m5qVv62M2m`
-
-## Creation Details
-- Created on: Mainnet
-- Decimals: 9
-- RPC: Ironforge Network 
+- **Signature**: `4gfjrjK5bTXDccZyzMYrdKPncuKjQV8doeQVpFouRnWJLihENCASuvWPME1s7d43FBnXPvALGFrBa7bPwBA1KnbN`
+- **Mint Address**: `HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q`
+- **Metadata Account**: `H5HFaENgLs5UL2hjtzQ1yuJ2FcRX9QQonUJTzWSBwT1L`
