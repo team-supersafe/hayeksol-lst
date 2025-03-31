@@ -26,24 +26,38 @@ This command will create your token mint and metadata accounts. After running th
 ### 2. Disable Freeze Authority
 
 ```bash
-spl-token authorize --disable YOUR_MINT_ADDRESS freeze
+spl-token authorize --disable Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP freeze
 ```
 
-Replace `YOUR_MINT_ADDRESS` with the mint address received from the previous command.
+Replace `Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP` with the mint address received from the previous command.
 
+### Output
+```
 Updating Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP
   Current freeze: 4FbPnN2A6zerBETx7NeERqDJMZjR5WhUQgXbCEw6mbVD
   New freeze: disabled
 
 Signature: 5ZR8NnxSvdBoYoGkeQnvPM4SToxogHEH9UUyhX5st8QVUqAm5DS67ksQ4mtsXuSMgRzP8opjUDFcw3rdeDPYV9ZL
+```
 
 ### 3. Transfer Mint Authority to Sanctum
 
 ```bash
-spl-token authorize YOUR_MINT_ADDRESS mint GRwm4EXMyVwtftQeTft7DZT3HBRxx439PrKq4oM6BwoZ
+spl-token authorize Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP mint GRwm4EXMyVwtftQeTft7DZT3HBRxx439PrKq4oM6BwoZ \
+-um --config ~/.config/solana/cli/config.yml \
+--fee-payer ~/solana/me.json
 ```
 
-Replace `YOUR_MINT_ADDRESS` with the same mint address.
+Replace `Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP` with the same mint address.
+
+### Output
+```
+Updating Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP
+  Current mint: 4FbPnN2A6zerBETx7NeERqDJMZjR5WhUQgXbCEw6mbVD
+  New mint: GRwm4EXMyVwtftQeTft7DZT3HBRxx439PrKq4oM6BwoZ
+
+Signature: 4Fs53qfVeEUnBDKQSKg4NUTAvqKKK6xLnDhArhMy5iS4oGc45tC6aiXWe1NyASsHcZH69yKoeJTYF8NM55LudeY8
+```
 
 ## Verification
 
