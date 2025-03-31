@@ -24,8 +24,9 @@ metaboss create fungible \
 
 This command will create your token mint and metadata accounts. After running this, you'll receive a mint address that you'll need for the next steps.
 
-#### Output
-```
+Command output
+
+```text
 Signature: 4gfjrjK5bTXDccZyzMYrdKPncuKjQV8doeQVpFouRnWJLihENCASuvWPME1s7d43FBnXPvALGFrBa7bPwBA1KnbN
 Mint: HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q
 Metadata: H5HFaENgLs5UL2hjtzQ1yuJ2FcRX9QQonUJTzWSBwT1L
@@ -33,13 +34,16 @@ Metadata: H5HFaENgLs5UL2hjtzQ1yuJ2FcRX9QQonUJTzWSBwT1L
 
 ### 2. Disable Freeze Authority
 
+> NOTE: spl-token might need the location of your config file, provide it with --config
+
 ```bash
 spl-token authorize --disable HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q freeze \
 -um --config ~/.config/solana/cli/config.yml
 ```
 
-#### Output
-```
+Command output
+
+```text
 Updating HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q
   Current freeze: GFefRR6EASXvnphnJApp2PRH1wF1B5pJijKBZGFzq1x1
   New freeze: disabled
@@ -57,8 +61,9 @@ spl-token authorize Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP mint GRwm4EXMyV
 
 Replace `Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP` with the same mint address.
 
-### Output
-```
+Command output
+
+```text
 Updating Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP
   Current mint: 4FbPnN2A6zerBETx7NeERqDJMZjR5WhUQgXbCEw6mbVD
   New mint: GRwm4EXMyVwtftQeTft7DZT3HBRxx439PrKq4oM6BwoZ
@@ -79,4 +84,4 @@ After running these commands, verify the following on the Solana explorer:
 
 - The Sanctum manager key (`GRwm4EXMyVwtftQeTft7DZT3HBRxx439PrKq4oM6BwoZ`) will temporarily control the mint authority until your stake pool is live
 - Once your stake pool is live, the mint authority will be transferred to your pool
-- Make sure to save the mint address for future reference 
+- Make sure to save the mint address for future reference
