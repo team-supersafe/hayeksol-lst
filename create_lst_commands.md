@@ -80,11 +80,11 @@ spl-token authorize HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q mint GRwm4EXMyV
 Command output
 
 ```text
-Updating Hay367MHMWdWnZKMtXXKHCRXfqPY6hofMsBA25VTYcXP
-  Current mint: 4FbPnN2A6zerBETx7NeERqDJMZjR5WhUQgXbCEw6mbVD
+Updating HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q
+  Current mint: GFefRR6EASXvnphnJApp2PRH1wF1B5pJijKBZGFzq1x1
   New mint: GRwm4EXMyVwtftQeTft7DZT3HBRxx439PrKq4oM6BwoZ
 
-Signature: 4Fs53qfVeEUnBDKQSKg4NUTAvqKKK6xLnDhArhMy5iS4oGc45tC6aiXWe1NyASsHcZH69yKoeJTYF8NM55LudeY8
+Signature: 5C1gtzqfW1sjxYkJZgixbSeNc8HthWdswwWeGuuG4dp4Mk7Wu4GV2EDVtkQAS8HnLYvochkwEVX4GaNQ4yhyf1cn
 ```
 
 ## Verification
