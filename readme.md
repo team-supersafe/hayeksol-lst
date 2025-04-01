@@ -32,21 +32,11 @@ The HayekSOL LST is being deployed with Sanctum
 - Transfer Mint Authority to Sanctum (`GRwm4EXMyVwtftQeTft7DZT3HBRxx439PrKq4oM6BwoZ`)
 
 ### 2. Onboarding Process
-1. Fill out the Sanctum onboarding form with:
-   - Token mint address: `HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q`
-   - Project details
-   - Contact information
-   - Technical requirements
+1. Fill out the Sanctum onboarding form here: https://learn.sanctum.so/docs/sanctum-lsts/setting-up-an-lst-with-sanctum/2.-filling-in-our-onboarding-form
+2. Wait to hear back from them (usually on TG)
+3. In the meantime you can check pool info using their CLI: https://learn.sanctum.so/docs/sanctum-lsts/setting-up-an-lst-with-sanctum/3.-technical-details
 
-### 3. Technical Implementation
-1. Deploy the Sanctum 2 Stake Pool Program
-2. Configure the following parameters:
-   - Stake pool authority
-   - Fee structure
-   - Rebalancing parameters
-   - APY settings
-
-### 4. Post-Deployment Steps
+### 3. Post-Deployment Steps
 1. Verify the stake pool deployment
 2. Test the integration
 3. Set up monitoring and maintenance procedures
