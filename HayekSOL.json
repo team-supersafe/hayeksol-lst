@@ -2,5 +2,6 @@
     "name": "Hayek Staked SOL",
     "symbol": "HayekSOL",
     "description": "MEV-Powered Liquid Staking from the Hayek Validator.",
-    "image": "https://team-supersafe.github.io/hayeksol-lst/HayekSOL.svg"
+    "image": "https://team-supersafe.github.io/hayeksol-lst/HayekSOL.svg",
+    "website": "https://hayek.fi"
 }
