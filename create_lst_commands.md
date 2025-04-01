@@ -51,6 +51,25 @@ Updating HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q
 Signature: 5j3ipK4xKMUWDnfA3E9u1fNTjB9PCs4j6h67ow8PvZiDsbaFxqbuYL7mxaGcd6vNXUs945cLd664GPCpAimebX5D
 ```
 
+#### Updating Metadata
+
+You can change metadata like "name", "uri", "symbol" or add new fields to the metadata one at a time with metaboss
+
+```sh
+metaboss update name --keypair ~/solana/me.json \
+--account HAY3ZXFGUEaQLM1rnxHATU64n7c32PAyQ9CnvYxfZR4Q \
+--new-name "Hayek Staked SOL" \
+--rpc "https://rpc.ironforge.network/mainnet?apiKey=<yourApiKey>"
+```
+
+Command output
+
+```text
+Tx sig: 2vscTMEtWeffBugjUgwXVhigJPvgbAWP7r7xpmDgBkG9j1boHsFuk4gc4yTU6pqaZ6TBeK78HbeFN622jCjatdyz
+```
+
+In this case we changes the field name to "Hayek Staked SOL". Do the same to change other fields.
+
 ### 3. Transfer Mint Authority to Sanctum
 
 ```bash
