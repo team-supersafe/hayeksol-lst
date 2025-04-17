@@ -1,3 +1,5 @@
+## DO NOT RENAME THIS REPO AS IT HOSTS TOKEN METADATA AND IT WILL BREAK
+
 The HayekSOL LST is being deployed with Sanctum
 
 ## Project Files
